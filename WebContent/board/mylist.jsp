@@ -1,3 +1,5 @@
+// 테스트 주석
+
 <%@ page contentType = "text/html; charset=euc-kr" %>
 <%@ page import = "board.*" %>
 <%@ page import = "java.util.*" %>
