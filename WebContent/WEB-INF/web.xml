@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+<servlet>
+    <description></description>
+    <display-name>member</display-name>
+    <servlet-name>member</servlet-name>
+    <servlet-class>member.controller.MemberController</servlet-class>
+    <init-param>
+   			<param-name>path</param-name>
+   			<param-value>D:\Jsp\WebContent\WEB-INF\properties\MemberPro.properties</param-value>
+    </init-param>
+  </servlet>
+   <servlet-mapping>
+    <servlet-name>member</servlet-name>
+    <url-pattern>*.nhn</url-pattern> 
+</servlet-mapping>
+
+<servlet>
+    <description></description>
+    <display-name>board</display-name>
+    <servlet-name>board</servlet-name>
+    <servlet-class>ch19.controller.ControllerAction</servlet-class>
+    <init-param>
+   			<param-name>propertyConfig</param-name>
+   			<param-value>D:\Jsp\WebContent\WEB-INF\properties\commandPro.properties</param-value>
+    </init-param>
+  </servlet>
+   <servlet-mapping>
+    <servlet-name>board</servlet-name>
+    <url-pattern>*.do</url-pattern> 
+</servlet-mapping>
+  
+</web-app>
